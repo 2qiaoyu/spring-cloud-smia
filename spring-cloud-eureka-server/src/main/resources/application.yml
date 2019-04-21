@@ -1,0 +1,9 @@
+server:
+  port: 8761
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    #在服务器接到请求间等待的初试时间
+    waitTimeInMsWhenSyncEmpty: 5
