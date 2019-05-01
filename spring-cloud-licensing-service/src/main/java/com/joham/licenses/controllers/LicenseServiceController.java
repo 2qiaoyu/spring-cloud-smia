@@ -3,6 +3,8 @@ package com.joham.licenses.controllers;
 import com.joham.licenses.config.ServiceConfig;
 import com.joham.licenses.model.License;
 import com.joham.licenses.services.LicenseService;
+import com.joham.licenses.utils.UserContextHolder;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,17 +21,15 @@ import java.util.List;
  */
 @RestController
 @RequestMapping(value = "v1/organizations/{organizationId}/licenses")
+@Slf4j
 public class LicenseServiceController {
 
     @Autowired
     private LicenseService licenseService;
 
-    @Autowired
-    private ServiceConfig serviceConfig;
-
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public List<License> getLicenses(@PathVariable("organizationId") String organizationId) {
-
+        log.info("LicenseServiceController Correlation id: {}", UserContextHolder.getContext().getCorrelationId());
         return licenseService.getLicensesByOrg(organizationId);
     }
 

@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: https://github.com/2qiaoyu/config-repo
-          search-paths: licensingservicem,organizationservice
+          search-paths: licensingservice,organizationservice
           username:
           password:
 eureka:
