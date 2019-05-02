@@ -24,6 +24,9 @@
         <module>spring-cloud-eureka-server</module>
         <module>spring-cloud-licensing-service</module>
         <module>spring-cloud-organization-service</module>
+        <module>spring-cloud-organization-service-new</module>
+        <module>spring-cloud-zuul-server</module>
+        <module>spring-cloud-specialroutes-service</module>
     </modules>
 
     <dependencies>
