@@ -1,3 +1,9 @@
+security:
+  oauth2:
+    resource:
+      userInfoUri: http://localhost:8901/auth/user
+    client:
+      client-id: eagleeye
 server:
   port: 8000
 management:
