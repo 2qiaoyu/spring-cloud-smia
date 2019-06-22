@@ -8,5 +8,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @author joham
  */
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class NoRouteFound extends RuntimeException {
+public class NoRouteFoundException extends RuntimeException {
+
 }

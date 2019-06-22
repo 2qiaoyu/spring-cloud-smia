@@ -10,5 +10,10 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AbTestingRouteRepository extends CrudRepository<AbTestingRoute, String> {
 
+    /**
+     * 查询方法名
+     * @param serviceName
+     * @return
+     */
     AbTestingRoute findByServiceName(String serviceName);
 }

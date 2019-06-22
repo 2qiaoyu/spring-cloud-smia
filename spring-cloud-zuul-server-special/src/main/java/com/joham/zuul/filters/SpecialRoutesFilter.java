@@ -56,7 +56,7 @@ public class SpecialRoutesFilter extends ZuulFilter {
 
     @Override
     public String filterType() {
-        return filterUtils.ROUTE_FILTER_TYPE;
+        return FilterUtils.ROUTE_FILTER_TYPE;
     }
 
     @Override
@@ -197,7 +197,7 @@ public class SpecialRoutesFilter extends ZuulFilter {
     public boolean useSpecialRoute(AbTestingRoute testRoute) {
         Random random = new Random();
 
-        if (testRoute.getActive().equals("N")) {
+        if ("N".equals(testRoute.getActive())) {
             return false;
         }
 

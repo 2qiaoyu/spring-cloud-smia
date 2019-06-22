@@ -14,4 +14,12 @@
   新组织服务，配合Zuul和specialroutes模块自定义路由进行AB测试
 * spring-cloud-specialroutes-service 配合Zuul自定义路由查询AB测试配置
 * spring-cloud-zuul-server 网关服务
-* sql -- sql脚本
+* spring-cloud-zuul-server-special 特殊网关服务，带有ABRoute
+* sql -- sql脚本 
+## 启动顺序
+1. spring-cloud-eureka-server
+2. spring-cloud-config-server
+3. spring-cloud-authentication-service 
+4. spring-cloud-licensing-service
+5. spring-cloud-organization-service
+6. spring-cloud-zuul-serve

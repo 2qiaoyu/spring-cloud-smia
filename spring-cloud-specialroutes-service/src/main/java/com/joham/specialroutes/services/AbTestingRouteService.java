@@ -1,7 +1,7 @@
 package com.joham.specialroutes.services;
 
 
-import com.joham.specialroutes.exception.NoRouteFound;
+import com.joham.specialroutes.exception.NoRouteFoundException;
 import com.joham.specialroutes.model.AbTestingRoute;
 import com.joham.specialroutes.repository.AbTestingRouteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class AbTestingRouteService {
         AbTestingRoute route = abTestingRouteRepository.findByServiceName(serviceName);
 
         if (route == null) {
-            throw new NoRouteFound();
+            throw new NoRouteFoundException();
         }
 
         return route;
