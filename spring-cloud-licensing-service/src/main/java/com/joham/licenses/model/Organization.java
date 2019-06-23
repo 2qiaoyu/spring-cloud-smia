@@ -2,11 +2,13 @@ package com.joham.licenses.model;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author joham
  */
 @Data
-public class Organization {
+public class Organization implements Serializable {
 
     String id;
 

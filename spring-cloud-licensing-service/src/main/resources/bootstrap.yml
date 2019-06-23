@@ -17,3 +17,13 @@ spring:
           binder:
             zkNodes: localhost
             brokers: localhost
+  zipkin:
+    baseUrl: http://localhost:9411
+    locator:
+      discovery:
+        enabled: true
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      percentage: 1

@@ -1,6 +1,5 @@
 package com.joham.licenses.controllers;
 
-import com.joham.licenses.config.ServiceConfig;
 import com.joham.licenses.model.License;
 import com.joham.licenses.services.LicenseService;
 import com.joham.licenses.utils.UserContextHolder;

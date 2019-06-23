@@ -27,6 +27,7 @@
         <module>spring-cloud-organization-service</module>
         <module>spring-cloud-organization-service-new</module>
         <module>spring-cloud-specialroutes-service</module>
+        <module>spring-cloud-zipkin-server</module>
         <module>spring-cloud-zuul-server</module>
         <module>spring-cloud-zuul-server-special</module>
     </modules>

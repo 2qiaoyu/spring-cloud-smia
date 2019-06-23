@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-cloud-zipkin-server
+
+server:
+  port: 9411
+
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
